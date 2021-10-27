@@ -1,4 +1,3 @@
-import { THIS_EXPR } from '@angular/compiler/src/output/output_ast';
 import { Component, OnDestroy, OnInit } from '@angular/core';
 import { Subscription } from 'rxjs';
 import { AuthService } from '../auth/auth.service';
@@ -14,7 +13,7 @@ export class HeaderComponent implements OnInit, OnDestroy {
   collapsed = true;
   isAuthenticated = false;
   private userSub: Subscription;
-  
+
   constructor(
     private dataStorageService: DataStorageService,
     private authService: AuthService) { }
@@ -33,7 +32,7 @@ export class HeaderComponent implements OnInit, OnDestroy {
   onFetchData() {
     this.dataStorageService.fetchRecipes().subscribe();
   }
-  onLogout(){
+  onLogout() {
     this.authService.logout();
   }
   ngOnDestroy() {
