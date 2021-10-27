@@ -1,3 +1,3 @@
 # recipe-book-food
- Recipe book whitout RxJs
- Uses Firebase
+ Recipe book whitout RxJs <br>
+ App uses Firebase / Bootstrap for Angular / Auth gard
